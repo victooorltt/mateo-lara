@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Services from '../components/Services.astro';
+
 ---
 
 <Layout>
@@ -15,6 +17,7 @@ import Layout from '../layouts/Layout.astro';
 
 			<!-- Desktop Nav -->
 			<nav class="hidden md:flex items-center gap-8">
+				<a href="#servicios" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Servicios</a>
 				<a href="#enfoque" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Metodología</a>
 				<a href="#casos" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Casos de Estudio</a>
 				<a href="#stack" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Capacidades</a>
@@ -56,6 +59,7 @@ import Layout from '../layouts/Layout.astro';
 		<!-- Mobile menu -->
 		<div class="hidden md:hidden border-b border-slate-200 bg-white" id="mobile-menu">
 			<div class="space-y-1 px-4 pb-4 pt-2">
+				<a href="#servicios" class="block rounded-lg px-3 py-2 text-base font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900">Servicios</a>
 				<a href="#enfoque" class="block rounded-lg px-3 py-2 text-base font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900">Metodología</a>
 				<a href="#casos" class="block rounded-lg px-3 py-2 text-base font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900">Casos de Estudio</a>
 				<a href="#stack" class="block rounded-lg px-3 py-2 text-base font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900">Capacidades</a>
@@ -161,7 +165,10 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<!-- Section 2: El Enfoque -->
+		<!-- Section 2: Servicios -->
+		<Services />
+
+		<!-- Section 3: El Enfoque -->
 		<section id="enfoque" class="bg-slate-950 text-slate-100 py-20 sm:py-24 border-y border-slate-900 relative overflow-hidden">
 			<!-- Subtle dark ambient glow -->
 			<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 h-[500px] w-[500px] rounded-full bg-teal-950/10 blur-[100px]"></div>
@@ -494,6 +501,7 @@ import Layout from '../layouts/Layout.astro';
 						<h3 class="font-semibold text-white font-display text-sm tracking-wider uppercase">Navegación</h3>
 						<div class="grid grid-cols-2 gap-2">
 							<a href="#hero" class="hover:text-white transition-colors">Inicio</a>
+							<a href="#servicios" class="hover:text-white transition-colors">Servicios</a>
 							<a href="#enfoque" class="hover:text-white transition-colors">Metodología</a>
 							<a href="#casos" class="hover:text-white transition-colors">Casos de Estudio</a>
 							<a href="#stack" class="hover:text-white transition-colors">Capacidades</a>
